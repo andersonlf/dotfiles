@@ -7,6 +7,7 @@ install() {
   USER=$1;
   DIR=$2;
   for a in `ls $PWD/$DIR`; do {
+    rm -f /home/$USER/.$a;
     ln -s $PWD/$DIR/$a /home/$USER/.$a;
   } done;
 }
