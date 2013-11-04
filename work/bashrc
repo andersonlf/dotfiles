@@ -7,6 +7,8 @@ alias ga='git add'
 alias gp='git push'
 alias gss='git status'
 alias io='mvn clean compile install -DskipTests'
+alias l='ls'
+alias cd..='cd ..'
 alias mkdir='mkdir -p -v'
 
 export LESS="-R"
