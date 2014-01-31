@@ -111,6 +111,14 @@ alias set-java-5='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.5.0_22;expor
 alias ec='mvn eclipse:clean eclipse:eclipse -Dversao.source.java=1.7 -Dversao.target.java=1.7'
 alias io='mvn clean compile install -DskipTests'
 
+# servers
+alias jbsp171='ssh jboss@jbsp171'
+alias jbsp172='ssh jboss@jbsp172'
+alias jbsp173='ssh jboss@jbsp173'
+alias jbsp174='ssh jboss@jbsp174'
+alias jbsp175='ssh jboss@jbsp175'
+alias jbsp168='ssh jboss@jbsp168'
+
 # shell basic commands
 alias cd..='cd ..'
 alias mkdir='mkdir -p'
