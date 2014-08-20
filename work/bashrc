@@ -103,8 +103,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # java environment variables
-alias set-java-8='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.8.0_05;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.8.0_05;export PATH=$JAVA_HOME/bin:$PATH;'
-alias set-java-7='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.7.0_60;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.7.0_60;export PATH=$JAVA_HOME/bin:$PATH;'
+alias set-java-8='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.8.0_20;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.8.0_20;export PATH=$JAVA_HOME/bin:$PATH;'
+alias set-java-7='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.7.0_67;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.7.0_67;export PATH=$JAVA_HOME/bin:$PATH;'
 alias set-java-6='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.6.0_45;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.6.0_45;export PATH=$JAVA_HOME/bin:$PATH;'
 alias set-java-5='export JAVA_HOME=/home/anderson/sisbride/sdk/jdk1.5.0_22;export JRE_HOME=/home/anderson/sisbride/sdk/jdk1.5.0_22;export PATH=$JAVA_HOME/bin:$PATH;'
 
