@@ -59,6 +59,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# my scripts
+alias max-performance='np900x4c max_performance'
+alias max-battery='np900x4c max_battery'
+alias np='np900x4c'
+
 # java environment variables
 alias set-java-8='export JAVA_HOME=/home/anderson/homeoffice/sdk/jdk1.8.0_20;export JRE_HOME=/home/anderson/homeoffice/sdk/jdk1.8.0_20;export PATH=$JAVA_HOME/bin:$PATH;'
 alias set-java-7='export JAVA_HOME=/home/anderson/homeoffice/sdk/jdk1.7.0_67;export JRE_HOME=/home/anderson/homeoffice/sdk/jdk1.7.0_67;export PATH=$JAVA_HOME/bin:$PATH;'
