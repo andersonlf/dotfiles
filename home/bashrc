@@ -72,5 +72,11 @@ alias set-java-7='export JAVA_HOME=/home/anderson/homeoffice/sdk/jdk1.7.0_67;exp
 alias ec='mvn eclipse:clean eclipse:eclipse -Dversao.source.java=1.8 -Dversao.target.java=1.8'
 alias io='mvn clean compile install'
 
+# git commands
+alias gt='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
 export LESS="-R"
 eval "$(lesspipe)"
