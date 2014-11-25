@@ -138,6 +138,7 @@ alias gt='git status'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
+alias gpp='git pull'
 
 export LESS="-R"
 eval "$(lesspipe)"
