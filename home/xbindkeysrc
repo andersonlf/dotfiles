@@ -1,0 +1,25 @@
+#fnf1
+"/usr/bin/cinnamon-settings"
+m:0x0 + c:156
+XF86Launch1
+
+#fnf11
+"/usr/bin/samsung-tools --show-notify --quiet --cpu hotkey"
+m:0x0 + c:210
+XF86Launch3
+
+#fnf12
+"/usr/bin/samsung-tools --show-notify --quiet --wireless hotkey"
+m:0x0 + c:246
+XF86WLAN
+
+# End of xbindkeys configuration
+"SamsungToolsDummyCommand"
+  Control+Alt+Shift+Mod4+F1+F2+F3
+
+#
+# End of xbindkeys configuration
+"samsung-tools --show-notify --quiet --cpu hotkey"
+  XF86Launch3
+"samsung-tools --show-notify --quiet --wireless hotkey"
+  XF86WLAN
