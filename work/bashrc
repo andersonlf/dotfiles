@@ -117,6 +117,7 @@ alias set-ibmjava-5='export JAVA_HOME=/home/anderson/sisbride/sdk/ibm-java2-x86_
 # maven commands
 alias ec='mvn eclipse:clean eclipse:eclipse -Dversao.source.java=1.7 -Dversao.target.java=1.7'
 alias io='mvn clean compile install -DskipTests'
+alias set-maven-3.0.5='export MAVEN_HOME=/home/anderson/sisbride/tools/apache-maven-3.0.5;export PATH=$MAVEN_HOME/bin:$PATH;'
 alias set-maven-3.1.1='export MAVEN_HOME=/home/anderson/sisbride/tools/apache-maven-3.1.1;export PATH=$MAVEN_HOME/bin:$PATH;'
 alias set-maven-3.2.3='export MAVEN_HOME=/home/anderson/sisbride/tools/apache-maven-3.2.3;export PATH=$MAVEN_HOME/bin:$PATH;'
 
