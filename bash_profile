@@ -6,9 +6,10 @@ export JAVA_HOME=/Users/andersonlfeitosa/homeoffice/jdk1.8.0_102
 export PATH=$PATH:$MAVEN_HOME/bin:$ANT_HOME/bin:$JAVA_HOME/bin:/Users/andersonlfeitosa/homeoffice/bin
 
 # some more ls aliases
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
+alias ll='ls -alFG'
+alias la='ls -AG'
+alias l='ls -CFG'
+alias ls='ls -CFG'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -23,4 +24,4 @@ alias gt='git status'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
-alias gpp='git pull'
+alias gu='git pull'
