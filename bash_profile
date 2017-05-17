@@ -1,9 +1,15 @@
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 
-export MAVEN_HOME=/Users/andersonlfeitosa/homeoffice/tools/apache-maven-3.3.9
-export ANT_HOME=/Users/andersonlfeitosa/homeoffice/tools/apache-ant-1.9.7
-export JAVA_HOME=/Users/andersonlfeitosa/homeoffice/jdk1.8.0_102
-export PATH=$PATH:$MAVEN_HOME/bin:$ANT_HOME/bin:$JAVA_HOME/bin:/Users/andersonlfeitosa/homeoffice/bin
+export PATH=$PATH:/Users/anderson/homeoffice/bin
+
+. /usr/local/etc/profile.d/z.sh
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # some more ls aliases
 alias ll='ls -alFG'
@@ -25,3 +31,4 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias gu='git pull'
+
