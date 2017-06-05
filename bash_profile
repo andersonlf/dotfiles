@@ -1,5 +1,6 @@
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 
+export GPG_TTY=$(tty)
 export PATH=$PATH:/Users/anderson/homeoffice/bin
 
 . /usr/local/etc/profile.d/z.sh
