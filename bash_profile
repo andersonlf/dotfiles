@@ -9,9 +9,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 # some more ls aliases
 alias ll='ls -alFG'
 alias la='ls -AG'
@@ -33,4 +30,4 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gu='git pull'
 alias gd='git diff'
-alias g1='echo status; git status; echo pull; git pull; echo status; git status; echo add; git add .; echo status; git status; echo commit; git commit -m "alterações realizadas por Anderson"; echo status; git status; echo pull; git pull; echo status; git status; echo push; git push' 
+alias g1='echo status; git status; echo pull; git pull; echo status; git status; echo add; git add .; echo status; git status; echo commit; git commit; echo status; git status; echo pull; git pull; echo status; git status; echo push; git push' 
