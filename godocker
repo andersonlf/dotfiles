@@ -1,0 +1,10 @@
+MACHINE=default
+
+if [ $? == 1 ]
+then
+	MACHINE=$1
+fi
+
+docker-machine env $MACHINE
+eval $(docker-machine env $MACHINE)
+
