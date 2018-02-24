@@ -3,8 +3,6 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$
 export GPG_TTY=$(tty)
 export PATH=$PATH:/Users/anderson/homeoffice/bin
 
-. /usr/local/etc/profile.d/z.sh
-
 GIT_PROMPT_ONLY_IN_REPO=1
 
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
@@ -42,4 +40,3 @@ alias gu='git pull'
 alias gd='git diff'
 alias gb='git branch'
 alias gk='git checkout'
-#alias g1='echo status; git status; echo pull; git pull; echo status; git status; echo add; git add .; echo status; git status; echo commit; git commit; echo status; git status; echo pull; git pull; echo status; git status; echo push; git push' 
