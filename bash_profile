@@ -3,6 +3,10 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$
 export GPG_TTY=$(tty)
 export PATH=$PATH:/Users/anderson/homeoffice/bin
 
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
+
+
 GIT_PROMPT_ONLY_IN_REPO=1
 
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
@@ -30,6 +34,7 @@ alias io='mvn clean compile install'
 
 # alias docker
 alias godocker='source /Users/anderson/homeoffice/dotfiles/godocker'
+alias openshift='godocker; oc cluster up --host-config-dir=openshift --host-data-dir=openshift --use-existing-config=true'
 
 # git commands
 alias gt='git status'
@@ -40,3 +45,7 @@ alias gu='git pull'
 alias gd='git diff'
 alias gb='git branch'
 alias gk='git checkout'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+#export SDKMAN_DIR="/Users/anderson/.sdkman"
+#[[ -s "/Users/anderson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/anderson/.sdkman/bin/sdkman-init.sh"
