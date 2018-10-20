@@ -3,8 +3,9 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$
 export GPG_TTY=$(tty)
 export PATH=$PATH:/Users/anderson/homeoffice/bin
 
-#export NVM_DIR="$HOME/.nvm"
-#. "/usr/local/opt/nvm/nvm.sh"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 
 GIT_PROMPT_ONLY_IN_REPO=1
