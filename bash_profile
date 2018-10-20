@@ -19,6 +19,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+export LSCOLORS=ExfxcxdxbxEgEdabagacad
+
 # some more ls aliases
 alias ll='ls -alFG'
 alias la='ls -AG'
