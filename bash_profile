@@ -33,7 +33,7 @@ alias cd..='cd ..'
 alias mkdir='mkdir -p'
 
 # maven commands
-alias io='mvn clean compile install'
+alias io='mvn clean compile install -Dmaven.test.skip=true'
 
 # alias docker
 alias godocker='source /Users/anderson/homeoffice/dotfiles/godocker'
