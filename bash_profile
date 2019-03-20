@@ -50,5 +50,5 @@ alias gb='git branch'
 alias gk='git checkout'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-#export SDKMAN_DIR="/Users/anderson/.sdkman"
-#[[ -s "/Users/anderson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/anderson/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/anderson/.sdkman"
+[[ -s "/Users/anderson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/anderson/.sdkman/bin/sdkman-init.sh"
