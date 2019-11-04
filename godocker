@@ -1,3 +1,5 @@
+#!/bin/bash
+
 MACHINE=default
 
 if [ $? == 1 ]
@@ -7,4 +9,3 @@ fi
 
 docker-machine env $MACHINE
 eval $(docker-machine env $MACHINE)
-
