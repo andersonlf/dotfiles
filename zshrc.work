@@ -111,7 +111,7 @@ alias cd..='cd ..'
 alias mkdir='mkdir -p'
 
 # maven commands
-alias io='mvn clean compile install -Dmaven.test.skip=true'
+alias io='mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true'
 
 # alias docker
 alias godocker='source $ANDERSON_WORKSPACE_DIR/dotfiles/godocker'
