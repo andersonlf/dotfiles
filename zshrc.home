@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export ANDERSON_WORKSPACE_DIR=$HOME/homeoffice
-export PATH=$HOME/bin:/usr/local/bin:$ANDERSON_WORKSPACE_DIR/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$ANDERSON_WORKSPACE_DIR/bin:$ANDERSON_WORKSPACE_DIR/flutter/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
