@@ -44,8 +44,11 @@ alias io="mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=
 # alias docker
 alias godocker="source $HOME/workspace/dotfiles/godocker"
 #alias dockerrm="docker rm $(docker ps -a -q -f status=exited)"
-function dockerrm() { 
-  docker rm $(docker ps -a -f status=exited -q)
+function dockerrm() {
+  docker ps -a;
+  echo;
+  docker rm $(docker ps -a -f status=exited -q);
+  docker ps -a;
 }
 
 # git commands
