@@ -43,6 +43,10 @@ alias io="mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=
 
 # alias docker
 alias godocker="source $HOME/workspace/dotfiles/godocker"
+#alias dockerrm="docker rm $(docker ps -a -q -f status=exited)"
+function dockerrm() { 
+  docker rm $(docker ps -a -f status=exited -q)
+}
 
 # git commands
 alias gt='git status'
@@ -57,3 +61,7 @@ alias gk='git checkout'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+. /usr/local/etc/profile.d/z.sh
+
+alias connect-aws='cd /Users/anderson.feitosa/Downloads/aws-cli-utilities-master/AWS\ CLI\ -\ Idaptive\ V1;python3 -m AWSCLI -t appen.my'
