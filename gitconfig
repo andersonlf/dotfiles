@@ -4,3 +4,6 @@
 
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = false
+	ff = only
