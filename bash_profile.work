@@ -32,6 +32,8 @@ alias cd..='cd ..'
 alias mkdir='mkdir -p'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
+alias sicoob-vpn-fortivpn='sudo openfortivpn -c $HOME/Dropbox/Publico/vpn.sicoob'
+alias docker-rm='docker ps -a; echo; docker rm $(docker ps -q -f status=exited); echo; docker ps -a'
 
 # brew 
 alias bs="brew search"
