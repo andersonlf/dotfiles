@@ -33,14 +33,14 @@ alias mkdir='mkdir -p'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
-alias sicoob-vpn-wifi='sudo openfortivpn -c $HOME/Dropbox/Publico/vpn.sicoob'
-alias dns-vpn-sicoob-wifi='sudo networksetup -setdnsservers Wi-Fi 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains Wi-Fi bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
+alias vpn-sicoob='sudo openfortivpn -c $HOME/Dropbox/Publico/vpn.sicoob'
+alias vpn-sicoob-dns='sudo networksetup -setdnsservers Wi-Fi 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains Wi-Fi bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
 
-alias sicoob-vpn-eth0='sudo openfortivpn -c $HOME/Dropbox/Publico/vpn.sicoob'
-alias dns-vpn-sicoob-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
+#alias sicoob-vpn-eth0='sudo openfortivpn -c $HOME/Dropbox/Publico/vpn.sicoob'
+#alias dns-vpn-sicoob-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
 
 alias dns-google-wifi='sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains Wi-Fi "Empty"'
-alias dns-google-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" "Empty"'
+#alias dns-google-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" "Empty"'
 
 alias docker-rm='docker ps -a; echo; docker rm $(docker ps -q -f status=exited); echo; docker ps -a'
 
