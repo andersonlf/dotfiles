@@ -33,11 +33,6 @@ alias mkdir='mkdir -p'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
-# brew 
-alias bs="brew search"
-alias bi="brew cask install"
-alias bic="brew cask install"
-
 # maven commands
 alias io="mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true"
 

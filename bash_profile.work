@@ -44,11 +44,6 @@ alias dns-google-wifi='sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4; s
 
 alias docker-rm='docker ps -a; echo; docker rm $(docker ps -q -f status=exited); echo; docker ps -a'
 
-# brew 
-alias bs="brew search"
-alias bi="brew cask install"
-alias bic="brew cask install"
-
 # maven commands
 alias io="mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true"
 
