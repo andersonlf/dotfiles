@@ -33,30 +33,32 @@ alias mkdir='mkdir -p'
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
+### VPN
 alias vpn='sudo openfortivpn -c $HOME/Dropbox/development/vpn/vpn.sicoob'
+
+### DNS VPN Wi-Fi
 alias vpnd='sudo networksetup -setdnsservers Wi-Fi 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains Wi-Fi bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
 
-#alias sicoob-vpn-eth0='sudo openfortivpn -c $HOME/Dropbox/development/vpn/vpn.sicoob'
-#alias dns-vpn-sicoob-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
+### DNS VPN Thunderbolt Ethernet
+alias vpndeth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 10.100.125.42 10.210.228.42; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" bancoob.br sicoob.com.br homologacao.com.br sisbr.coop.br'
 
+### DNS Google Wi-Fi
 alias dnsgoogle='sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains Wi-Fi "Empty"'
-#alias dns-google-eth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" "Empty"'
 
-alias docker-rm='docker ps -a; echo; docker rm $(docker ps -q -f status=exited); echo; docker ps -a'
+### DNS Google Thunderbolt Ethernet
+alias dnsgoogleeth0='sudo networksetup -setdnsservers "Thunderbolt Ethernet" 8.8.8.8 8.8.4.4; sudo networksetup -setsearchdomains "Thunderbolt Ethernet" "Empty"'
 
 # maven commands
 alias io="mvn clean compile install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true"
 
 # alias docker
 alias godocker="source $HOME/workspace/dotfiles/godocker"
-#alias dockerrm="docker rm $(docker ps -a -q -f status=exited)"
-function dockerrm() {
+function docker-rm() {
   docker ps -a;
   echo;
   docker rm $(docker ps -a -f status=exited -q);
   docker ps -a;
 }
-
 # git commands
 alias gt='git status'
 alias ga='git add'
