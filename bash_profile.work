@@ -59,6 +59,7 @@ function docker-rm() {
   docker rm $(docker ps -a -f status=exited -q);
   docker ps -a;
 }
+
 # git commands
 alias gt='git status'
 alias ga='git add'
